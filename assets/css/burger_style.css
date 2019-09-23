@@ -1,6 +1,6 @@
 li {
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     background: #faebd7;
   }
 
@@ -8,7 +8,6 @@ li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
-
   }
   
   .label {
@@ -23,10 +22,4 @@ li {
   
   .form-group {
     margin-bottom: 5px;
-  }
-
-  #ca{
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
   }

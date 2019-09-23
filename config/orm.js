@@ -36,10 +36,14 @@ function objToSql(ob) {
   }
 
 var orm = {
-    selectAll: function(tableInput) {
+    selectAll: function(tableInput, cb) {
         var queryString = "SELECT * FROM ??";
-        connection.query(queryString, [tableInput], function(err, result) {
-          if (err) throw err;
+        connection.query(queryString, [tableInput], function(err, result) 
+        {
+          if (err) {
+            throw err;
+          }
+          cb(result);
           console.log(result);
         });
       },
