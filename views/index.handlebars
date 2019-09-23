@@ -5,7 +5,7 @@
 <ul id="notdev">
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
+      {{> burgers/burger-block devoured=true}}
        <hr/>
     {{/unless}}
     
@@ -18,7 +18,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
+      {{> burgers/burger-block devoured=false}}
        <hr/>
     {{/if}}
   {{/each}}

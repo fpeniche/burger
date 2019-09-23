@@ -2,14 +2,14 @@
             $(".change-devoured").on("click", function(event) {
                 var id = $(this).data("id");
                 var newDevoured = $(this).data("newdevoured");
-                if(newDevoured){
+             /*   if(newDevoured){
                     newDevoured=false
                     //$("notdev").append("<li>"+burger_name+"<li/>");
                 } 
                 else if
                     (newDevoured = false)
                         { newDevoured = true   
-                }
+                } */
                 var newDevouredState = {
                 devoured: newDevoured
                 };
@@ -42,7 +42,7 @@
                 data: newBurger
                 }).then(
                 function() {
-                    console.log("created new burger");
+                    console.log("created new burger" + burger_name);
                     // Reload the page to get the updated list
                     location.reload();
                     }
